@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+</head>
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email" required><br><br>
+
+       <label for="pass">Password:</label><br>
+       <input type="password" id="pass" name="pass"><br><br>
+
+
+       <label for="city">City:</label><br>
+       <select id="city" name="city">
+           <option value="islamabad">New York</option>
+           <option value="karachi">London</option>
+           <option value="rawalpindi">Toronto</option>
+           <option value="lahore">Sydney</option>
+       </select><br><br>
+
+       <!-- 'for' is what is going to be displayed -->
+       <p>Gender:</p>
+       <!-- The "name" attribute groups radio buttons together, allowing only one to be selected at a time. The "value" attribute specifies the value sent to the server when the form is submitted. -->
+       <!-- For checkboxes, the "name" attribute can be the same for multiple checkboxes if you want to allow multiple selections, and the "value" attribute will indicate which items were selected. -->
+       <!-- Jo id hai wo wohi value bhi hai aur name is the heading of all the option. under which they all lie -->
+       <input type="radio" id="male" name="gender" value="Male">
+       <label for="male">Male</label>
+
+       <input type="radio" id="female" name="gender" value="Female">
+       <label for="female">Female</label>
+
+       <input type="radio" id="other" name="gender" value="Other">
+       <label for="other">Other</label>
+
+       <p> Hobbies: </p>
+
+       <input type="checkbox" id="reading" name="hobbies" value="reading">
+       <label for="reading">Reading</label>
+
+       <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+       <label for="swimming">Swimming</label>
+
+       <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+       <label for="traveling">Traveling</label>
+       <br>
+       <br>
+        <input type="submit" value="Submit">
+        </body>
+</html>
